@@ -34,7 +34,7 @@ export class AppComponent  {
 
   constructor(private apiCaller : HttpClient)
   {
-     this.apiCaller.get('http://webapi101.herokuapp.com/api/Student/GetResults').subscribe((data : [any]) => {
+     this.apiCaller.get('https://webapi101.herokuapp.com/api/Student/GetResults').subscribe((data : [any]) => {
       //console.log(data);
       this.data = data;
       this.data.forEach(element => {
